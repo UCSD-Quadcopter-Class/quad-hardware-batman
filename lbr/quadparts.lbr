@@ -898,7 +898,9 @@
 <connect gate="G$1" pin="R" pad="R"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="Joshua Crook"/>
+</technology>
 </technologies>
 </device>
 </devices>

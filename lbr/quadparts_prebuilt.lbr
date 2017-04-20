@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4064,6 +4064,54 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="STOCK" value="" constant="no"/>
 <attribute name="TOL" value="" constant="no"/>
 <attribute name="VALUE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-2012-0805-15" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Joshua Crook"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="311-15ARCT-ND"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MPN" value="RC0805JR-0715RL"/>
+<attribute name="VALUE" value="15" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-2012-0805-62" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Joshua Crook"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="311-62ARCT-ND"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MPN" value="RC0805JR-0762RL"/>
+<attribute name="VALUE" value="62"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-2012-0805-1K" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Joshua Crook"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="311-1.0KARCT-ND"/>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MPN" value="RC0805JR-071KL"/>
+<attribute name="VALUE" value="1k"/>
 </technology>
 </technologies>
 </device>
