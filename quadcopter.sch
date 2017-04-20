@@ -4266,18 +4266,14 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="U$8" gate="G$1" pin="CS_A/G"/>
 <wire x1="223.52" y1="22.86" x2="223.52" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="12.7" x2="226.06" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="12.7" x2="228.6" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="12.7" x2="238.76" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="12.7" x2="238.76" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="12.7" x2="241.3" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="12.7" x2="241.3" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="CS_M"/>
 <wire x1="226.06" y1="22.86" x2="226.06" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="DRDY_M"/>
-<wire x1="228.6" y1="22.86" x2="228.6" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="DEN_A/G"/>
 <wire x1="238.76" y1="22.86" x2="238.76" y2="12.7" width="0.1524" layer="91"/>
 <junction x="226.06" y="12.7"/>
-<junction x="228.6" y="12.7"/>
 <junction x="238.76" y="12.7"/>
 <label x="241.3" y="10.16" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
