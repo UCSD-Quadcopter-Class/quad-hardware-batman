@@ -4053,7 +4053,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="C23" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
 <part name="GND38" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND39" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="U$9" library="LEDs" deviceset="RED_LED_0805" device=""/>
+<part name="U$9" library="LEDs" deviceset="RED_LED_0805" device="" value="Red"/>
 <part name="D7" library="quadparts_prebuilt" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
 <part name="GND40" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="D1" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
