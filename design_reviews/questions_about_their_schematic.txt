@@ -1,0 +1,124 @@
+﻿Meeting time/place: 4/24/17 4pm SME 305
+
+lbr/LEDs.lbr
+Blue LED
+* Be aware!  Size of this device is 0603 which is smaller than the suggested 0805.  Will be tougher to solder.  
+* Symbol
+   * Needs arrows coming out of it (representing that it emits light)
+* Package
+   * Layers: Correct
+   * Dimensions: Correct
+   * Attributes: Correct
+   * Circle marking anode is a bit strange. Lab02 lecture slide 10 has examples for standard style for LED packages.
+* Device
+   * Attributes error, DISTR should be DIST and DISTRPN should be DISTPIN
+
+
+lbr/quadparts_john.lbr
+General Note: Font in package: set to proportional, needs to be vector (auto-vector font setting doesn’t seem to work, change it through info)
+Set attributes to constant, not variable
+0805 resistor
+* Package
+   * Dimensions: Correct
+   * No polarity marker needed for resistors   
+   * Layers: Missing tPlace layer for placement on board.  Otherwise good. 
+   * Pads are very small, make them extent 1mm out from the part
+9AXIS_IMU
+* Package
+   * tStop: Correct.  No overlap (good)
+   * Dimensions: re-look at pad spacing
+      * Referring to dimensions on datasheet:
+      * L1: 3.08mm, max on datasheet is 3.06mm
+      * Everything else seems to be within range
+   * Layers: Missing tPlace layer guiding markers.  Otherwise Correct
+   * need to extend pads 1mm out beyond package
+* Device
+   * Pin to pad connection: Correct
+RED_LED
+* Package
+   * Dimension: Correct
+   * Layer: Missing tPlace layer guiding markers.  Otherwise Correct
+   * Circle marking anode is a bit strange. Lab02 lecture slide 10 has examples for standard style for LED packages.
+* Symbol
+   * Needs arrows coming out of it (representing that it emits light)
+* Device
+   * Good
+MOSFET
+* Package
+   * Don’t need polarity marker since it is 3-pins and orientation is obvious
+   * Layer: Missing tPlace layer guiding markers.  Otherwise Correct
+   * Dimension: tDocu should be the outline of the device without the pins
+      * Used E (2.64 mm) as device width, use E1(1.20mm - 1.40mm) instead
+   * Consider extending pads so they extend 1mm
+      * But they are correct (based off minimum dimensions in datasheet)
+* Symbol
+   * Source and Drain are swapped
+* Device
+   * Incorrect pin hookup.  Pin 2 should be source and pin 3 should be drain
+
+
+lbr/quadparts_nick.lbr
+General Note: Font in package: set to proportional, needs to be vector (auto-vector font setting doesn’t seem to work, change it through info)
+Set attributes to constant, not variable
+9-AXIS-IMU
+* Package
+   * Layers: Good.  Missing placement guidelines in tPlace.
+   * Dimensions: Good.
+   * Pin placement: Good.  
+   * Package has value text, but device has no value
+* Symbol
+   * Good
+* Device
+   * Pin Connections: Correct
+   * Needs Prefix: U
+   * Attributes: good
+N-Channel-MOSFET
+* Package
+   * Dimensions: Good
+   * Layers: Good.  Suggest tPlace placement guidelines
+* Symbol
+   * Good
+* Device
+   * Prefix Needed: Q
+   * Correct Pin Connection
+   * Doesn’t need value
+   * Attributes check out
+NETBRIDGE
+* Package has value text, but device has no value
+LED
+* Package
+   * tDocu outline should be the size of the whole package (2 mm x 1.5 mm), it can overlap the pads (it doesn't get printed)
+   * Layers: Good.  Suggest tPlace placement guidelines
+   * * Symbol
+   * Needs arrows coming out of it (representing that it emits light)
+* Device
+   * Connections:good
+   * good
+Resistor
+* Package
+   * Dimension: tDocu outline should be the size of the whole package, it can overlap the pads (it doesn't get printed)
+   * Layers: No tPlace placement guidelines
+* Symbol
+   * Good
+* Device
+   * Good
+
+
+Quadcopter.sch
+* General
+   * Consider making labels size 0.05 instead of 0.07 so they don't overlap
+* Microcontroller
+   * Looks good
+* Motor
+   * Use a Schottky diode on the motor, not a LED
+   * Why are you using a 220uF capacitor instead of 100uF (as used in the given motor driver)?
+   * Motors should be powered by V-Bat not VCC like the other components
+   * Try to banish the wire crossing 
+* IMU
+   * No pull up resistors connected to SCL and SDA/SDI/SDO pg 28 under the table in 5.1
+   * ***Maybe connect DEN_A/G to VCC
+   * Set SDO_A/G should be set to high as specified in the lab writeup.  SDO_A/G is the lowest bit of the I2C address pg 30
+* Power Supply
+   * Looks good
+* LED
+   * Be careful with your LED, its typical forward voltage is 3.8 which is pretty close to VBAT, but maximum is 4.5 so it shouldn't burn out. But it's still good practice to add at least some resistance in there.

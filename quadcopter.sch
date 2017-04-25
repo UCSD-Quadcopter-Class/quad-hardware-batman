@@ -2743,6 +2743,7 @@
 <attribute name="DISTPN" value="311-15ARCT-ND"/>
 <attribute name="MFR" value="Yageo"/>
 <attribute name="MPN" value="RC0805JR-0715RL"/>
+<attribute name="REVIEWER" value="John Wu"/>
 <attribute name="VALUE" value="15" constant="no"/>
 </technology>
 </technologies>
@@ -2759,6 +2760,7 @@
 <attribute name="DISTPN" value="311-62ARCT-ND"/>
 <attribute name="MFR" value="Yageo"/>
 <attribute name="MPN" value="RC0805JR-0762RL"/>
+<attribute name="REVIEWER" value="John Wu"/>
 <attribute name="VALUE" value="62"/>
 </technology>
 </technologies>
@@ -2775,6 +2777,7 @@
 <attribute name="DISTPN" value="311-1.0KARCT-ND"/>
 <attribute name="MFR" value="Yageo"/>
 <attribute name="MPN" value="RC0805JR-071KL"/>
+<attribute name="REVIEWER" value="John Wu"/>
 <attribute name="VALUE" value="1k"/>
 </technology>
 </technologies>
@@ -3781,6 +3784,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND"/>
 <attribute name="MFR" value="Vishay Siliconix"/>
 <attribute name="MPN" value="SI2302CDS-T1-E3"/>
+<attribute name="REVIEWER" value="John Wu"/>
 </technology>
 </technologies>
 </device>
@@ -3799,6 +3803,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Joshua Crook"/>
+<attribute name="REVIEWER" value="John Wu"/>
 </technology>
 </technologies>
 </device>
@@ -3822,7 +3827,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="3M9447-ND"/>
 <attribute name="MFR" value="3M"/>
 <attribute name="MPN" value="961102-6404-AR"/>
-<attribute name="REVIEWER" value=""/>
+<attribute name="REVIEWER" value="John Wu"/>
 </technology>
 </technologies>
 </device>
@@ -3867,6 +3872,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="497-14946-1-ND" constant="no"/>
 <attribute name="MFR" value="STMicroelectronics"/>
 <attribute name="MPN" value="LSM9DS1TR"/>
+<attribute name="REVIEWER" value="John Wu"/>
 </technology>
 </technologies>
 </device>
@@ -3935,7 +3941,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="475-1278-1-ND"/>
 <attribute name="MFR" value="OSRAM Opto Semiconductors Inc."/>
 <attribute name="MPN" value="LS R976-NR-1"/>
-<attribute name="REVIEWER" value=""/>
+<attribute name="REVIEWER" value="John Wu"/>
 </technology>
 </technologies>
 </device>

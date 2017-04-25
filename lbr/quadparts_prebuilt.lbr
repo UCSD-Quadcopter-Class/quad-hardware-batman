@@ -4079,6 +4079,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="311-15ARCT-ND"/>
 <attribute name="MFR" value="Yageo"/>
 <attribute name="MPN" value="RC0805JR-0715RL"/>
+<attribute name="REVIEWER" value="John Wu"/>
 <attribute name="VALUE" value="15" constant="no"/>
 </technology>
 </technologies>
@@ -4095,6 +4096,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="311-62ARCT-ND"/>
 <attribute name="MFR" value="Yageo"/>
 <attribute name="MPN" value="RC0805JR-0762RL"/>
+<attribute name="REVIEWER" value="John Wu"/>
 <attribute name="VALUE" value="62"/>
 </technology>
 </technologies>
@@ -4111,6 +4113,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="311-1.0KARCT-ND"/>
 <attribute name="MFR" value="Yageo"/>
 <attribute name="MPN" value="RC0805JR-071KL"/>
+<attribute name="REVIEWER" value="John Wu"/>
 <attribute name="VALUE" value="1k"/>
 </technology>
 </technologies>

@@ -116,7 +116,7 @@
 <attribute name="DISTPN" value="475-1278-1-ND"/>
 <attribute name="MFR" value="OSRAM Opto Semiconductors Inc."/>
 <attribute name="MPN" value="LS R976-NR-1"/>
-<attribute name="REVIEWER" value=""/>
+<attribute name="REVIEWER" value="John Wu"/>
 </technology>
 </technologies>
 </device>

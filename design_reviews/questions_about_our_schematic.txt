@@ -1,0 +1,51 @@
+﻿Design Review for Team Batman
+------
+
+Meeting time/place: 4/24/17 4pm SME 305
+
+NOTE: You guys use the power labels “VCC” and “3V” but we used “VBAT” and “VCC”. We kept this in mind while checking the schematics.
+
+
+Incorrect Motor Driver LED (?)
+* SCHOT led used by the motor.sch but the value is way off compared to the one that is used by team batman
+* This picture is from the Motor-Driver.sch, they also use a Schottky diode but the Voltage is a lot different from yours. (Were not sure if our Diode is correct either but its the Red-LED that we made in the previous labs)
+*   
+
+
+
+The Polarized Cap you used in the motor is 100uF. This matches the original schematic but we asked the prof. And he said to use the one provided (says 220uF)
+
+
+
+
+Motor Driver Resistor (For example R6) is supposed to be 100Ohm but you used 10k.
+
+
+
+
+Resistor is different at pins PB6 and PB7 (330 not 15). Probably added extra LED at PB4 (not on official schematic)
+
+
+Connection of the CS a/g and CS M onto power instead of onto the vddio power
+   *    
+   * It says “connected to VDD_IO” (so we connected directly to the vdd_io line which has the capacitor->gnd also on the wire). You just connected it directly to power (but I dont think this is a big issue, just pointing it out).
+   * Questions use of DEN_A/g . is it necessary and how do you know to turn it on
+
+
+Why do you guys connect a Resistor and power to the SDA and SCL slots on the IMU. Diagram is not explicitly shown to do that. Where was the information found?
+
+
+Why is SDO_A/G held high on the IMU?
+
+
+On the 6 pin programmer -- MISO, SCK and RESET are missing labels
+
+
+We calculated the resistance needed for the custom LED and it was 52 not 64. Used Vdrop of 2 and Current of 25.
+
+
+Part design Review
+9AXIS IMU -- might be touching, move out a little bit.
+MOSFET and LED pass
+Swapped width and heigh of the pads on the 0805 resistor
+Need to extend LED pads by 1 mm.
