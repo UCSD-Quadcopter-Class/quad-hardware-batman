@@ -75,7 +75,7 @@
 <wire x1="-1.7" y1="1.1" x2="-1.7" y2="-1.1" width="0.127" layer="39"/>
 <wire x1="-1.7" y1="-1.1" x2="1.7" y2="-1.1" width="0.127" layer="39"/>
 <text x="-1.7" y="1.6" size="1" layer="25">&gt;NAME</text>
-<text x="-1.7" y="-2.2" size="0.88" layer="25">&gt;VALUE</text>
+<text x="-1.7" y="-2.2" size="0.88" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -99,7 +99,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RED_LED_0805">
+<deviceset name="RED_LED_0805" prefix="D" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="RED_LED_0805" x="0" y="0"/>
 </gates>

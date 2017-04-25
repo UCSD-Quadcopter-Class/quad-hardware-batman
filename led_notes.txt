@@ -1,0 +1,3 @@
+Lab 4 Team Batman
+
+For the LED we used 4 in total.  We constructed one red LED to attach to our voltage regulator (in datasheets/LEDs/Our_LED_DPN_475-1278-1-ND.pdf).  The 3 green LEDs from the microcontroller are from the pre_built library.  
