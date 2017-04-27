@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -506,7 +506,6 @@
 <wire x1="2.2" y1="0.9" x2="2.2" y2="-0.9" width="0.1" layer="39"/>
 </package>
 <package name="MOSFET_20V">
-<text x="-1.5" y="-3.4" size="0.88" layer="27">&gt;VALUE</text>
 <text x="-1.4" y="2.6" size="1" layer="25">&gt;NAME</text>
 <smd name="GND" x="-0.95" y="-1.15" dx="1" dy="1.5" layer="1"/>
 <smd name="SRC" x="0.95" y="-1.15" dx="1" dy="1.5" layer="1"/>
@@ -829,6 +828,11 @@
 </gates>
 <devices>
 <device name="" package="MOSFET_20V">
+<connects>
+<connect gate="G$1" pin="P-D" pad="DRN"/>
+<connect gate="G$1" pin="P-G" pad="GND"/>
+<connect gate="G$1" pin="P-S" pad="SRC"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Alexander Orr"/>
