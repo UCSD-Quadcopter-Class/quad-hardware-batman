@@ -534,16 +534,16 @@
 <smd name="VDDIO" x="-1.505" y="1.725" dx="0.224" dy="1.4" layer="1"/>
 <wire x1="-1.725" y1="1.5" x2="-1.725" y2="-1.5" width="0.127" layer="51"/>
 <smd name="RES1" x="1.505" y="1.725" dx="0.225" dy="1.4" layer="1"/>
-<smd name="VDD1" x="-0.215" y="1.725" dx="0.224" dy="1.4" layer="1"/>
+<smd name="VDD2" x="-0.215" y="1.725" dx="0.224" dy="1.4" layer="1"/>
 <smd name="CAP" x="0.215" y="1.725" dx="0.224" dy="1.4" layer="1"/>
 <smd name="CS_A/G" x="-1.075" y="-1.725" dx="0.224" dy="1.4" layer="1"/>
 <smd name="CS_M" x="-0.645" y="-1.725" dx="0.224" dy="1.4" layer="1"/>
 <smd name="INT1_A/G" x="0.645" y="-1.725" dx="0.224" dy="1.4" layer="1"/>
 <smd name="INT2_A/G" x="1.075" y="-1.725" dx="0.224" dy="1.4" layer="1"/>
 <smd name="C1" x="-1.075" y="1.725" dx="0.224" dy="1.4" layer="1"/>
-<smd name="VDD2" x="-0.645" y="1.725" dx="0.224" dy="1.4" layer="1"/>
-<smd name="GND2" x="0.645" y="1.725" dx="0.224" dy="1.4" layer="1"/>
-<smd name="GND1" x="1.075" y="1.725" dx="0.224" dy="1.4" layer="1"/>
+<smd name="VDD1" x="-0.645" y="1.725" dx="0.224" dy="1.4" layer="1"/>
+<smd name="GND1" x="0.645" y="1.725" dx="0.224" dy="1.4" layer="1"/>
+<smd name="GND2" x="1.075" y="1.725" dx="0.224" dy="1.4" layer="1"/>
 <smd name="SCL/SPC" x="-2.005" y="0.645" dx="0.224" dy="1.4" layer="1" rot="R90"/>
 <smd name="SDO_A/G" x="-2.005" y="-0.645" dx="0.224" dy="1.4" layer="1" rot="R90"/>
 <smd name="RES2" x="2.005" y="0.645" dx="0.225" dy="1.4" layer="1" rot="R90"/>
@@ -657,68 +657,38 @@
 <wire x1="7.62" y1="0" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.715" y1="-5.08" x2="-1.905" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="-1.905" y1="-5.08" x2="0" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-1.27" width="0.127" layer="94"/>
-<wire x1="-5.715" y1="-7.62" x2="0.635" y2="-7.62" width="0.127" layer="94"/>
-<wire x1="0.635" y1="-7.62" x2="3.81" y2="-7.62" width="0.127" layer="94"/>
-<wire x1="1.905" y1="-0.635" x2="1.905" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="1.905" y1="-5.08" x2="3.81" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-7.62" x2="3.81" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="-0.635" y1="-1.905" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0.635" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0.635" y1="-1.905" x2="0" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0" y2="-0.635" width="0.127" layer="94"/>
-<wire x1="0.635" y1="-6.985" x2="0.635" y2="-7.62" width="0.127" layer="94"/>
-<wire x1="0.635" y1="-7.62" x2="0.635" y2="-8.255" width="0.127" layer="94"/>
-<wire x1="0.635" y1="-7.62" x2="0" y2="-6.985" width="0.254" layer="94"/>
-<wire x1="0" y1="-6.985" x2="0" y2="-8.255" width="0.254" layer="94"/>
-<wire x1="0" y1="-8.255" x2="0.635" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.715" y1="-5.08" x2="-5.715" y2="-7.62" width="0.127" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.127" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="0" width="0.127" layer="94"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.27" y2="-0.635" width="0.508" layer="94"/>
-<wire x1="-0.635" y1="-0.635" x2="0.635" y2="-0.635" width="0.508" layer="94"/>
-<wire x1="1.27" y1="-0.635" x2="2.54" y2="-0.635" width="0.508" layer="94"/>
 <text x="-5.08" y="12.7" size="2.54" layer="95">&gt;NAME</text>
-<wire x1="-7.62" y1="-5.08" x2="-5.715" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="0" width="0.127" layer="94"/>
-<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.127" layer="94"/>
 </symbol>
 <symbol name="IMU_9AXIS">
-<pin name="VDDIO1" x="0" y="0" visible="pad" length="middle" rot="R270"/>
-<pin name="SCL/SPC" x="-7.62" y="-7.62" visible="pad" length="middle"/>
-<pin name="VDDIO2" x="-7.62" y="-10.16" visible="pad" length="middle"/>
-<pin name="SDA/SDI/SDO" x="-7.62" y="-12.7" visible="pad" length="middle"/>
-<pin name="SDO_A/G" x="-7.62" y="-15.24" visible="pad" length="middle"/>
-<pin name="SDO_M" x="0" y="-22.86" visible="pad" length="middle" rot="R90"/>
-<pin name="CS_A/G" x="2.54" y="-22.86" visible="pad" length="middle" rot="R90"/>
-<pin name="CS_M" x="5.08" y="-22.86" visible="pad" length="middle" rot="R90"/>
-<pin name="DRDY_M" x="7.62" y="-22.86" visible="pad" length="middle" rot="R90"/>
-<pin name="INT_M" x="10.16" y="-22.86" visible="pad" length="middle" rot="R90"/>
-<pin name="INT1_A/G" x="12.7" y="-22.86" visible="pad" length="middle" rot="R90"/>
-<pin name="INT2_A/G" x="15.24" y="-22.86" visible="pad" length="middle" rot="R90"/>
-<pin name="DEN_A/G" x="17.78" y="-22.86" visible="pad" length="middle" rot="R90"/>
-<pin name="RES5" x="25.4" y="-15.24" visible="pad" length="middle" direction="pas" rot="R180"/>
-<pin name="RES4" x="25.4" y="-12.7" visible="pad" length="middle" direction="pas" rot="R180"/>
-<pin name="RES3" x="25.4" y="-10.16" visible="pad" length="middle" direction="pas" rot="R180"/>
-<pin name="RES2" x="25.4" y="-7.62" visible="pad" length="middle" direction="pas" rot="R180"/>
-<pin name="RES1" x="17.78" y="0" visible="pad" length="middle" direction="pas" rot="R270"/>
-<pin name="GND2" x="15.24" y="0" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="GND1" x="12.7" y="0" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="CAP" x="10.16" y="0" visible="pad" length="middle" direction="pas" rot="R270"/>
-<pin name="VDD2" x="7.62" y="0" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VDD1" x="5.08" y="0" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="C1" x="2.54" y="0" visible="pad" length="middle" rot="R270"/>
-<wire x1="-2.54" y1="-17.78" x2="-2.54" y2="-5.08" width="0.508" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="20.32" y2="-5.08" width="0.508" layer="94"/>
-<wire x1="20.32" y1="-5.08" x2="20.32" y2="-17.78" width="0.508" layer="94"/>
-<wire x1="20.32" y1="-17.78" x2="-2.54" y2="-17.78" width="0.508" layer="94"/>
-<text x="22.86" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="25.4" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SDO_A/G" x="-2.54" y="-5.08" visible="pad" length="short"/>
+<pin name="SCL/SPC" x="-2.54" y="-7.62" visible="pad" length="short"/>
+<pin name="SDA/SDI/SDO" x="-2.54" y="-10.16" visible="pad" length="short"/>
+<pin name="VDDIO1" x="2.54" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="VDDIO2" x="5.08" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="VDD1" x="7.62" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="VDD2" x="10.16" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="RES1" x="25.4" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="RES2" x="25.4" y="-5.08" visible="pad" length="short" rot="R180"/>
+<pin name="RES3" x="25.4" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="RES4" x="25.4" y="-10.16" visible="pad" length="short" rot="R180"/>
+<pin name="RES5" x="25.4" y="-12.7" visible="pad" length="short" rot="R180"/>
+<pin name="GND2" x="20.32" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="GND1" x="17.78" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="SDO_M" x="20.32" y="-17.78" visible="pad" length="short" rot="R90"/>
+<pin name="CS_A/G" x="2.54" y="-17.78" visible="pad" length="short" rot="R90"/>
+<pin name="CS_M" x="5.08" y="-17.78" visible="pad" length="short" rot="R90"/>
+<pin name="DEN_A/G" x="7.62" y="-17.78" visible="pad" length="short" rot="R90"/>
+<pin name="C1" x="15.24" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="CAP" x="12.7" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="DRDY_M" x="10.16" y="-17.78" visible="pad" length="short" rot="R90"/>
+<pin name="INT_M" x="12.7" y="-17.78" visible="pad" length="short" rot="R90"/>
+<pin name="INT1_A/G" x="15.24" y="-17.78" visible="pad" length="short" rot="R90"/>
+<pin name="INT2_A/G" x="17.78" y="-17.78" visible="pad" length="short" rot="R90"/>
 </symbol>
 <symbol name="NET_BRIDGE">
 <text x="0" y="2.54" size="2.54" layer="95">&gt;NAME</text>
@@ -880,7 +850,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATOR" value="Alexander Orr"/>
+<attribute name="CREATOR" value="Alex Orr"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="497-14946-1-ND" constant="no"/>
 <attribute name="MFR" value="STMicroelectronics"/>
