@@ -1,0 +1,26 @@
+Errors
+
+1.  A bunch of nets in the middle of motor controllers are connected and tehy should not be (e.g., filtered, flyback, etc.)
+
+2.  THe symbol for you mosfet is pretty hard to understand.  You usually ignore the shape of the physical part in designing the schematic symbol.
+
+3.  THe 10KOhm resistors on the input filte to the motor contorller sohuld be 100OHms
+
+4.  Your IMU symbol is hard to read.  Again, your symbols are more readable if your arrange the pins so related thingsa are together (E.g., SDA and SCL next to eachocher.)
+
+5.  Decoupling cap sizes on your IMU are wrong.
+
+6.  you have no custom LEDS
+
+
+
+
+other notes
+
+
+1.  It's conventional to draw decoupling caps (and caps in general) vertically.
+
+
+2.  THe 1uF cap on the input filter to the motoro controllers hould be 0.1uF
+
+3.  Gnd should alway be lower than power.  Putting gnd on top makes your power supply circuit very hard tou nderstand.
