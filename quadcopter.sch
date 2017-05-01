@@ -4579,7 +4579,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="PB5" class="2">
+<net name="PB5" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB5(OC1A/PCINT5)"/>
 <wire x1="137.16" y1="119.38" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
@@ -4706,7 +4706,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <label x="147.32" y="200.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PE3" class="2">
+<net name="PE3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PE3(OC3A/AIN1)"/>
 <wire x1="137.16" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
@@ -4727,7 +4727,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="PE4" class="2">
+<net name="PE4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PE4(OC3B/INT4)"/>
 <wire x1="137.16" y1="76.2" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
@@ -4748,7 +4748,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="C19" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="PE5" class="2">
+<net name="PE5" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PE5(OC3C/INT5)"/>
 <wire x1="137.16" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
