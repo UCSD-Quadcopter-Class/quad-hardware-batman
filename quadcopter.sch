@@ -3487,13 +3487,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-1.4" y1="2" x2="1.4" y2="2" width="0.127" layer="21"/>
 </package>
 <package name="NET_BRIDGE">
-<smd name="L" x="0" y="0" dx="1.25" dy="1.35" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="R" x="1" y="0" dx="1.25" dy="1.35" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="L" x="0" y="0" dx="1.25" dy="1" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="R" x="1" y="0" dx="1.25" dy="1" layer="1" rot="R90" stop="no" cream="no"/>
 <text x="-1" y="1.13" size="1" layer="25" font="vector">&gt;NAME</text>
-<wire x1="-0.7" y1="0.65" x2="1.7" y2="0.65" width="0.1" layer="39"/>
-<wire x1="1.7" y1="-0.65" x2="-0.7" y2="-0.65" width="0.1" layer="39"/>
-<wire x1="-0.7" y1="0.65" x2="-0.7" y2="-0.65" width="0.1" layer="39"/>
-<wire x1="1.7" y1="0.65" x2="1.7" y2="-0.65" width="0.1" layer="39"/>
+<wire x1="-0.5" y1="0.65" x2="1.5" y2="0.65" width="0.1" layer="39"/>
+<wire x1="1.5" y1="-0.65" x2="-0.5" y2="-0.65" width="0.1" layer="39"/>
+<wire x1="-0.5" y1="0.65" x2="-0.5" y2="-0.65" width="0.1" layer="39"/>
+<wire x1="1.5" y1="0.65" x2="1.5" y2="-0.65" width="0.1" layer="39"/>
 </package>
 <package name="MALE_HEADER_2X1_0.1IN">
 <description>Header, Vertical,2.54 mm pitch;0.635 mm lead width,2 pins,1 row,2 pins per row,5.08 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
