@@ -1,0 +1,47 @@
+﻿Meeting time/place: 5/3/17 4:30pm EBU3B B230
+
+Board size checks out
+Attenna
+        3V layer running under the attenna controller X
+        Trace is extra thick between attena and balun 18mil V
+        Caps close V
+        Short Trace V
+        Group and Layer 2 V
+        Vias surrond attenna driver V
+        Pours do not completely surround the attena driver V
+        Ample Space around Attenna V
+        Does it match (maybe)
+        No Traces routed through V
+Power and Ground
+        VBAT runs over all 4 motors V
+        VBAT wide enough V
+        3V runs under micro and near IMU V
+        Bat_gnd and GND are good V
+        Power Both in the same layer (15) V
+        Nothing narrow V
+        Does the VBAT power plane extend to the battery connector ?
+IMU
+        Centered V
+        Very close capacitors V
+        IMU on Y axis V
+        Only ground under the IMU V
+        Some traces under the IMU, but not in the IMU proper X
+Headers
+        FTDI headers are facing the wrong direction X
+Microcontroller
+        Resonator is good V
+        Decoupling caps are not close the power of microcontroler V
+                So this is fine for current understanding of decoupling caps
+Power Supply
+        Voltage regulator caps are good V
+        Volt reg near bat connector V
+        3V power runs under all V
+Motor Drivers
+        On all motors, filtered connections may need to be high voltage X
+                Delete the filtered/flyback tags, then double check trace thickness
+Mechanics
+        Motor cups are 8.4mm V
+        
+Miscellaneous
+        VBAT by volt reg is high current V
+        Extra lines on layer 2 and 15 for bat_gnd and vbat

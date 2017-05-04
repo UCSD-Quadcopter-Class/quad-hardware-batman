@@ -1,0 +1,101 @@
+﻿Meeting time/place: 5/3/17 4:30pm EBU3B B230
+
+* Antenna and Antenna Driver
+   * Do all the traces for the antenna driver reside in layer 1? Yes
+   * Is the trace between the balun and the antenna extra-thick? Yes
+   * Are the other two capacitors close to the balun? Yes
+   * Is the trace between the balun and the antenna short (no longer than the corresponding trace on the red board)?
+      * No, this trace is about 1.55mm on the redboard vs 3.89mm on yours
+   * Is there a ground pour in layer Top surrounding the antenna driver components?
+      * Ground pour encroaches too much on the antenna, have the left side end at the FEED N$8 pin
+      * Also the via underneath the antenna component might interfere (the one to the left of FEED N$8
+   * Is there a ground pour in layer 2 surround the antenna driver?
+      * Same as the above bullet without the via
+   * Are there vias connecting the two pours and roughly surrounding the antenna driver? are they connected to GND?
+      * Yes and yes
+   * Is one of the antenna's pads surrounded by the pours?
+      * Yes
+   * Is there ample space around the antenna that is free of metal on all four layers?
+      * Yes.  There is also a cutout, but it looks like you make an indent in the pour on layers 2 and 15 anyway.  The cutout is not needed.  Is it supposed to be a restrict?  
+   * Does the layout roughly match the layout on the red board?
+      * Design is less compact
+   * Are there any traces routed through the antenna driver area that are not related to the driver? 
+      * No
+* Power and Ground
+   * Does the VBAT power plane reach under all four motor drivers?
+      * Yes
+   * Is the VBAT power plane wider than 0.5mm everywhere?
+      * Yes
+   * Does the 3V power plane run under microcontroller and near the IMU's power pins?
+      * Yes
+   * Does the combination of the BAT_GND and GND ground plane extend to almost every area of the board (with the exception of the area round the antenna)?
+      * Covers whole board except for antenna, but BAT_GND and GND combined into one. BAT_GND should be separate.
+   * Are the VBAT and 3V power pours both in the same metal layer (probably layer 2)?
+      * Yes
+   * Are there any parts of the power our ground pours that are very narrow?  They should be no "necks" narrower than 0.5mm.
+      * No
+   * Does the VBAT power plane extend to the battery connector?
+      * No, but this is a confusing check we aren’t supposed to do that are we?
+* IMU
+   * Is the IMU at the center of the board?
+      * Yes
+   * Are the capacitors specified in the IMU datasheet located as close as is practical to the IMU?
+      * Some of the traces are fairly long may want to look into a way to make the traces connecting the capacitors and the IMU a shorter.  
+   * Is the IMU oriented so that the X and Y axes are aligned with the pitch and roll axis of the quadcopter?
+      * No it is not
+   * Are there any traces under the IMU?  Is there anything other than ground plane under the IMU?
+      * No
+* Headers
+   * Are the two FTDI headers oriented so the silkscreen is labels for the pins are on the board and the pins will protrude off the board?
+      * Yes
+* Microcontroller
+   * Is the layout of resonator and the associated caps similar to the layout of those parts on the red board?
+      * Yes
+   * Do all the traces for the resonator and its associated caps lie in layer Top?
+      * Yes
+   * Are the decoupling caps for the microcontroller located as close as possible to power pins of the microcontroller?
+      * C2 is pretty far from it’s pin
+* Power Supply
+   * Are the caps associated with the voltage regulator located near the regulator? Yes
+   * Is the voltage regulator located near the battery connector? Yes
+   * Does the 3V power plane run underneath the voltage regulator? Yes
+* Motor Drivers
+   * Are the traces that carry large currents thick enough? Yes
+* Aesthetics
+   * Does does the layout look nice? Yes, seems to be fairly clean/consistent. Just a bit muddled around the IC, but that’s to be expected
+   * Are nearby parts aligned? Mostly, except around the IMU but that can be expected since proximity is more important
+   * Are the reference designators arranged so they don't overlap each other or pads? Mostly, it’s pretty messy around the IC though and it looks difficult to tell the LED direction
+* Mechanical
+   * Given the location of the motors, will the props clear the board (except for the arms)? Just about. Arm length is 25mm, while propellor radius is 27.5mm. Plus the radius of the motor (another 1mm or so) this should be sufficient space, although there is minimal overlap.
+   * Is the "cup" for the motors the right diameter? Yes (8.4mm diameter)
+   * Are there any large internal holes in the board? No
+   * Is the board roughly symmetrical? Yes, maybe a bit front heavy from the components but they’re light enough it shouldn’t matter.
+* Checks
+   * Does DRC check pass without errors?
+      * No, there are 851 errors
+   * If DRC doesn't pass with no errors, does the team have good explanations for why the errors are ok? TBD
+   * Does DFM check pass with no show stoppers?
+      * No, some spacing and  clearance issues.
+   * Does Eagle Lint pass? There are a few errors, but they are minor:
+quadcopter.sch:quadparts-nick:(Device)NET_BRIDGE:(Variant): : Missing required attribute 'DIST'
+quadcopter.sch:quadparts-nick:(Device)NET_BRIDGE:(Variant): : Missing required attribute 'DISTPN'
+quadcopter.sch:quadparts-nick:(Device)NET_BRIDGE:(Variant): : Missing required attribute 'MFR'
+quadcopter.sch:quadparts-nick:(Device)NET_BRIDGE:(Variant): : Missing required attribute 'MPN'
+quadcopter.sch:quadparts-nick:(Device)N-CHANNEL_MOSFET : Device doesn't have user value, but symbol does.
+quadcopter.sch:quadparts-nick:(Device)MALE_HEADER_2POS:(Variant)-2X1-0.1IN: : Missing required attribute 'REVIEWER'
+quadparts-nick.lbr:(Device)NET_BRIDGE:(Variant): : Missing required attribute 'DIST'
+quadparts-nick.lbr:(Device)NET_BRIDGE:(Variant): : Missing required attribute 'DISTPN'
+quadparts-nick.lbr:(Device)NET_BRIDGE:(Variant): : Missing required attribute 'MFR'
+quadparts-nick.lbr:(Device)NET_BRIDGE:(Variant): : Missing required attribute 'MPN'
+quadparts-nick.lbr:(Device)N-CHANNEL_MOSFET : Device doesn't have user value, but symbol does.
+quadparts-nick.lbr:(Device)MALE_HEADER_2POS:(Variant)-2X1-0.1IN: : Missing required attribute 'REVIEWER'
+quadparts-nick.lbr:(Device)CERAMIC_CAP:(Variant)-0805-0.1UF: : Missing required attribute 'REVIEWER'
+* Gerber Files
+   * Are areas around the antenna clear in the gerber files? Yes
+   * Are the power planes where you expect them to be in the gerber files? The planes are consistent with the brd file, but there should be a separate bat_gnd plane
+   * Are there any traces that cross in an unexpected way in the gerber files? No
+   * Are there any elements that should be in the silkscreen that show up in metal layers? No
+   * Are there any elements that should be in the metal layers but that show up on the silkscreen? No
+   * Does the board outline match what was draw in the brd file? Yes
+   * Does FreeDFM pass?
+      * No, some spacing and  clearance issues.
