@@ -1,4 +1,5 @@
-Dimensions: 
+Dimensions: 138mm x 138mm
+~ 5.433" x 5.433"
 
 
 File types
