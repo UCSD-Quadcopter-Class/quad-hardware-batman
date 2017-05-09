@@ -1,0 +1,17 @@
+Dimensions: 
+
+
+File types
+
+Assembly Bottom		%N.basm.ps
+Assembly Top		%N.tasm.ps
+Mechanical		%N.mech.ps
+Component Side		%N.cmp
+Top Innter Metal	%N.m02
+Bottom Inner Metal	%N.m15
+Solder Side		%N.sol
+Silk Screen SOL	(bot.)	%N.pls
+Silk Screen CMP (top)	%N.plc
+Solder Stop Mask CMP	%N.stc
+Solder Stop Mask SOL	%N.sts
+Generated Drill Date	%N.drd

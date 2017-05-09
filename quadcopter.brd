@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="39.3700787" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2615,7 +2615,7 @@
 <class number="2" name="HIGHCURRENT" width="0.4572" drill="0">
 </class>
 </classes>
-<designrules name="4pcb-66board">
+<designrules name="batman-4pcb-66board *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -2942,11 +2942,11 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Toshiba Semiconductor and Storage" x="10.5" y="62.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="CRS08(TE85L,Q,M)" x="10.5" y="62.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="D2" library="quadparts_prebuilt" package="LEDSC125X200X120-2_HS" value="green" x="37.5" y="74">
-<attribute name="DIST" value="Digikey" x="37.5" y="74" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="160-1179-1-ND" x="37.5" y="74" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Lite-On Inc" x="37.5" y="74" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="LTST-C170GKT" x="37.5" y="74" size="1.778" layer="27" display="off"/>
+<element name="D2" library="quadparts_prebuilt" package="LEDSC125X200X120-2_HS" value="green" x="44.5" y="74" rot="R180">
+<attribute name="DIST" value="Digikey" x="44.5" y="74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="160-1179-1-ND" x="44.5" y="74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Lite-On Inc" x="44.5" y="74" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="LTST-C170GKT" x="44.5" y="74" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="D3" library="quadparts_prebuilt" package="LEDSC125X200X120-2_HS" value="green" x="53" y="19" rot="R180">
 <attribute name="DIST" value="Digikey" x="53" y="19" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3094,13 +3094,13 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Yageo" x="69.5" y="64" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0805JR-0710KL" x="69.5" y="64" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R3" library="quadparts_prebuilt" package="RESC2012X60_HS" value="15" x="44" y="74">
-<attribute name="CREATOR" value="Joshua Crook" x="44" y="74" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="44" y="74" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="311-15ARCT-ND" x="44" y="74" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Yageo" x="44" y="74" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0805JR-0715RL" x="44" y="74" size="1.778" layer="27" display="off"/>
-<attribute name="REVIEWER" value="John Wu" x="44" y="74" size="1.778" layer="27" display="off"/>
+<element name="R3" library="quadparts_prebuilt" package="RESC2012X60_HS" value="15" x="38" y="74">
+<attribute name="CREATOR" value="Joshua Crook" x="38" y="74" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="38" y="74" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-15ARCT-ND" x="38" y="74" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="38" y="74" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0715RL" x="38" y="74" size="1.778" layer="27" display="off"/>
+<attribute name="REVIEWER" value="John Wu" x="38" y="74" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R4" library="quadparts_prebuilt" package="RESC2012X60_HS" value="15" x="54" y="22">
 <attribute name="CREATOR" value="Joshua Crook" x="54" y="22" size="1.778" layer="27" display="off"/>
@@ -3395,7 +3395,7 @@ design rules under a new name.</description>
 <via x="35" y="13.5" extent="1-16" drill="0.6"/>
 <via x="31" y="16" extent="1-16" drill="0.6"/>
 <via x="45" y="16" extent="1-16" drill="0.6"/>
-<wire x1="57.04" y1="63.77" x2="36.455" y2="74" width="0" layer="19" extent="1-1"/>
+<wire x1="57.04" y1="63.77" x2="45.545" y2="74" width="0" layer="19" extent="1-1"/>
 <wire x1="39.11" y1="16.299" x2="40" y2="14.5" width="0" layer="19" extent="1-1"/>
 <wire x1="38.61" y1="16.299" x2="39.11" y2="16.299" width="0" layer="19" extent="1-1"/>
 <wire x1="37.11" y1="16.299" x2="38.61" y2="16.299" width="0" layer="19" extent="1-1"/>
@@ -3489,7 +3489,7 @@ design rules under a new name.</description>
 <signal name="PB7">
 <contactref element="U1" pad="43"/>
 <contactref element="R3" pad="2"/>
-<wire x1="36.61" y1="26.061" x2="44.955" y2="74" width="0" layer="19" extent="1-1"/>
+<wire x1="36.61" y1="26.061" x2="38.955" y2="74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="U1" pad="25"/>
@@ -3559,7 +3559,7 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="D2" pad="A"/>
 <contactref element="R3" pad="1"/>
-<wire x1="38.545" y1="74" x2="43.045" y2="74" width="0" layer="19" extent="1-1"/>
+<wire x1="37.045" y1="74" x2="43.455" y2="74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="D3" pad="A"/>
