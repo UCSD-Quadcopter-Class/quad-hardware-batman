@@ -1,0 +1,20 @@
+
+commit b52a12f5e403104732c74143660c7053492b505c
+
+You might want to move the jumper out from under the battery.  It's a through-hole part so the pins will stick out the bottom.
+
+There's a long trace on VBAT from the power supply area to the upper-left motor driver.  It'd be better to have a shorter and/or fatter wire for this.  Or, better yet, add a protrusion on  your VBAT pour from the edge into the area of the power supply.
+
+the layout of your oscilator needs to look more like the layout on the redboard.  It needs to be straight shot from the two pads on the oscillator to the chip, and the leads should be roughly the same length.
+
+I tihnk C2 should be closer to the voltage regulator.
+
+C11 and C12 should be closer to the micro controller..  Ditto for C7
+
+I would separate the main GND Pour from the pour under your radio.  I would also move the radio pour from layer 15 to layer 2.  THis is in addition to the pour on Top.
+
+Trogdor rules!
+
+
+
+ 
