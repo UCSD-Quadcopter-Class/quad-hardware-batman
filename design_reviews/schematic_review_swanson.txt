@@ -1,3 +1,4 @@
+
 Errors
 
 1.  A bunch of nets in the middle of motor controllers are connected and tehy should not be (e.g., filtered, flyback, etc.)
@@ -24,3 +25,12 @@ other notes
 2.  THe 1uF cap on the input filter to the motoro controllers hould be 0.1uF
 
 3.  Gnd should alway be lower than power.  Putting gnd on top makes your power supply circuit very hard tou nderstand.
+
+commit 606f2b4b186d19f5c9034cc72a6fd0a4f088a5b7
+
+THe input filter for your motor controllers is not right.  You've swapped the resistor and the capacitor.  THe Cap should be between the PWM line and ground. and the resistor should be between the microcontroller and the capacitor.
+
+
+C2 should be connected to BAT_GND
+
+
