@@ -29,8 +29,10 @@ other notes
 commit 606f2b4b186d19f5c9034cc72a6fd0a4f088a5b7
 
 THe input filter for your motor controllers is not right.  You've swapped the resistor and the capacitor.  THe Cap should be between the PWM line and ground. and the resistor should be between the microcontroller and the capacitor.
+-- swapped resistor and capacitor
 
 
 C2 should be connected to BAT_GND
+-- changed to BAT_GND
 
 
